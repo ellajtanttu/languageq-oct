@@ -1,64 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <link href="css/bootstrap.css" rel="stylesheet" type="text/css" />
-    <link href="css/styles.css" rel="stylesheet" type="text/css" />
-    <script src="js/jquery-3.6.0.js"></script>
-    <script src="js/scripts.js"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200;0,300;0,400;0,600;0,800;1,200;1,300;1,400;1,600;1,800&family=Roboto+Slab:wght@200;400;700&display=swap"
-      rel="stylesheet"
-    />
-    <title>Programming Language Quiz</title>
-  </head>
-  <body>
-    <div class="container">
-      <div class="intro">
-        <h1>Programming Language Quiz</h1>
-        <h5 id="mainSubHead">
-          Find out which programming language will suit your interests by
-          answering the questions below!
-        </h5>
-      </div>
 
-      <div class="quiz">
-        <form id="quizForm">
-          <div class="row" id="top-row">
-            <div class="col-lg-7">
-              <div class="form-group">
-                <input
-                  id="name"
-                  type="text"
-                  class="form-control"
-                  placeholder="Name"
-                  required
-                />
-              </div>
-            </div>
+<head>
+  <link href="css/bootstrap.css" rel="stylesheet" type="text/css" />
+  <link href="css/styles.css" rel="stylesheet" type="text/css" />
+  <script src="js/jquery-3.6.0.js"></script>
+  <script src="js/scripts.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200;0,300;0,400;0,600;0,800;1,200;1,300;1,400;1,600;1,800&family=Roboto+Slab:wght@200;400;700&display=swap"
+    rel="stylesheet" />
+  <title>Programming Language Quiz</title>
+</head>
 
- <!-- ---------------- -->
+<body>
+  <div class="container">
+    <div class="intro">
+      <h1>Programming Language Quiz</h1>
+      <h5 id="mainSubHead">
+        Find out which programming language will suit your interests by
+        answering the questions below!
+      </h5>
+    </div>
 
-            <div class="col-lg-5">
-              <div class="form-group">
-                <select id="inputExp" class="form-control" required>
-                  <option selected value="noExp">Choose Programming Experience</option>
-                  <option value="go">Beginner</option>
-                  <option value="js">Intermediate</option>
-                  <option value="cs">Advanced</option>
-                </select>
-              </div>
+    <div class="quiz">
+      <form id="quizForm">
+        <div class="row" id="top-row">
+          <div class="col-lg-7">
+            <div class="form-group">
+              <input id="name" type="text" class="form-control" placeholder="Name" required />
             </div>
           </div>
 
-          <div class="row">
-            <div class="col-lg-6">
-              <div class="form-group">
-                <div class="question">
-                  <label class="qText" for="q1"
-                    ><h6>Which platforms are you most familiar with?</h6></label
-                  >
+          <!-- ---------------- -->
+
+          <div class="col-lg-5">
+            <div class="form-group">
+              <select id="inputExp" class="form-control" required>
+                <option selected value="noExp">
+                  Choose Programming Experience
+                </option>
+                <option value="go">Beginner</option>
+                <option value="js">Intermediate</option>
+                <option value="cs">Advanced</option>
+              </select>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+
+          <div class="col-lg-6">
+
+            <div class="form-group">
+              <div class="question">
+                <label class="qText" for="q1">
+                  <h6>Which platforms are you most familiar with?</h6>
+                </label>
+                <div class="radio">
                   <label>
                     <input type="radio" name="q1" value="go" checked />
                     Linux, macOS, FreeBSD, NetBSD, OpenBSD, Windows, Plan 9,
@@ -80,20 +80,18 @@
               </div>
             </div>
 
-            <div class="col-lg-6">
-              <div class="form-group">
-                <div class="question">
-                  <label class="qText" for="q2"
-                    ><h6>Your preference for the language developer:</h6></label
-                  >
-                  <label>
-                    <input type="radio" name="q2" value="cs" checked />
-                    Microsoft
-                  </label>
-                </div>
+          </div>
+
+          <div class="col-lg-6">
+
+            <div class="form-group">
+              <div class="question">
+                <label class="qText" for="q2">
+                  <h6>Your preference for the language developer:</h6>
+                </label>
                 <div class="radio">
                   <label>
-                    <input type="radio" name="q2" value="go" />
+                    <input type="radio" name="q2" value="go" checked />
                     Google, Inc.
                   </label>
                 </div>
@@ -104,41 +102,65 @@
                     International
                   </label>
                 </div>
+                <div class="radio">
+                  <label>
+                    <input type="radio" name="q2" value="cs" />
+                    Microsoft
+                  </label>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+        <div class="row">
+
+          <div class="col-lg-6">
+
+            <div class="form-group">
+              <div class="question">
+                <label class="qText" for="q3">
+                  <h6>Pick a year:</h6>
+                </label>
+                <div class="radio">
+                  <label>
+                    <input type="radio" name="q3" value="go" checked />
+                    2009
+                  </label>
+                </div>
+                <div class="radio">
+                  <label>
+                    <input type="radio" name="q3" value="js" />
+                    1995
+                  </label>
+                </div>
+                <div class="radio">
+                  <label>
+                    <input type="radio" name="q3" value="cs" />
+                    2000
+                  </label>
+                </div>
               </div>
             </div>
           </div>
 
-          <div class="row">
-            <div class="col-lg-6">
+          <div class="col-lg-6">
+            <div class="form-group">
               <div class="question">
-                <label class="qText" for="q3"><h6>Pick a year:</h6></label>
-                <label>
-                  <input type="radio" name="q3" value="go" checked />
-                  2009
+                <label class="qText" for="q4">
+                  <h6>Which file extension seems the most fun?</h6>
                 </label>
-              </div>
-              <div class="radio">
-                <label>
-                  <input type="radio" name="q3" value="js" />
-                  1995
-                </label>
-              </div>
-              <div class="radio">
-                <label>
-                  <input type="radio" name="q3" value="cs" />
-                  2000
-                </label>
-              </div>
-            </div>
-
-            <div class="col-lg-6">
-              <div class="form-group">
-                <div class="question">
-                  <label class="qText" for="q4"
-                    ><h6>Which file extension seems the most fun?</h6></label
-                  >
+                <div class="radio">
                   <label>
-                    <input type="radio" name="q4" value="js" checked />
+                    <input type="radio" name="q4" value="go" checked />
+                    .go
+                  </label>
+                </div>
+                <div class="radio">
+                  <label>
+                    <input type="radio" name="q4" value="js"/>
                     .js
                   </label>
                 </div>
@@ -148,27 +170,25 @@
                     .cs
                   </label>
                 </div>
-                <div class="radio">
-                  <label>
-                    <input type="radio" name="q4" value="go" />
-                    .go
-                  </label>
-                </div>
               </div>
             </div>
           </div>
 
-          <div class="row">
-            <div class="col-lg-6">
-              <div class="form-group">
-                <div class="question">
-                  <label class="qText" for="q5"
-                    ><h6>Pick a paradigm set:</h6></label
-                  >
+        </div>
+
+        <div class="row">
+
+          <div class="col-lg-6">
+
+            <div class="form-group">
+              <div class="question">
+                <label class="qText" for="q5">
+                  <h6>Pick a paradigm set:</h6>
+                </label>
+                <div class="radio">
                   <label>
-                    <input type="radio" name="q5" value="cs" checked />
-                    Multi-paradigm: procedural, functional, object-oriented,
-                    generic
+                    <input type="radio" name="q5" value="go" checked />
+                    Compiled, concurrent, imperative, structured
                   </label>
                 </div>
                 <div class="radio">
@@ -180,30 +200,34 @@
                 </div>
                 <div class="radio">
                   <label>
-                    <input type="radio" name="q5" value="go" />
-                    Compiled, concurrent, imperative, structured
+                    <input type="radio" name="q5" value="cs"/>
+                    Multi-paradigm: procedural, functional, object-oriented,
+                    generic
                   </label>
                 </div>
               </div>
             </div>
 
-            <div class="col-lg-6">
-              <div class="form-group">
-                <div class="question">
-                  <label class="qText" for="q6"
-                    ><h6>
-                      Who would you like to have invented your language?
-                    </h6></label
-                  >
+          </div>
+
+
+          <div class="col-lg-6">
+
+            <div class="form-group">
+              <div class="question">
+                <label class="qText" for="q6">
+                  <h6>Who would you like to have invented your language?</h6>
+                </label>
+                <div class="radio">
                   <label>
-                    <input type="radio" name="q6" value="js" checked />
-                    Brendan Eich
+                    <input type="radio" name="q6" value="go" checked/>
+                    Robert Griesemer, Rob Pike, Ken Thompson
                   </label>
                 </div>
                 <div class="radio">
                   <label>
-                    <input type="radio" name="q6" value="go" />
-                    Robert Griesemer, Rob Pike, Ken Thompson
+                    <input type="radio" name="q6" value="js"/>
+                    Brendan Eich
                   </label>
                 </div>
                 <div class="radio">
@@ -216,78 +240,70 @@
             </div>
           </div>
 
-          <button type="submit" class="homeMade">Submit</button>
-          <div class="expAlert">
-            <p>Please enter your coding experience level at the top of the page.</p>
-          </div>
-        </form>
-      </div>
-
-
-       <!-- ---------------- -->
-
-      <div class="results">
-
-        <div class="oops">
-          <p>It looks like something isn't right, we haven't collected enough information from you. Please click below to try again.</p>
-        </div>
-        <div id="resGo">
-          <h4>
-            <span class="userName"></span>, based on your answers you should
-            study:
-          </h4>
-          <h1>Go</h1>
-          <img
-            class="langLogo"
-            src="https://golang.org/lib/godoc/images/go-logo-blue.svg"
-            alt="go language logo"
-          />
-          <a href="https://golang.org/" class="homeMade" role="button"
-            >Learn More</a
-          >
         </div>
 
-        <div id="resJs">
-          <h4>
-            <span class="userName"></span>, based on your answers you should
-            study:
-          </h4>
-          <h1>Javascript</h1>
-          <img
-            class="langLogo"
-            src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.britefish.net%2Fwp-content%2Fuploads%2F2019%2F06%2Flogo-javascript-2.png&f=1&nofb=1"
-            alt="javascript language logo"
-          />
-          <a href="https://www.javascript.com/" class="homeMade" role="button"
-            >Learn More</a
-          >
-        </div>
-
-        <div id="resCs">
-          <h4>
-            <span class="userName"></span>, based on your answers you should
-            study:
-          </h4>
-          <h1>C#</h1>
-          <img
-            class="langLogo"
-            src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fi.pinimg.com%2Foriginals%2Fe8%2F46%2F0f%2Fe8460f0d8b9df01e9460bfd1ade0e8c8.png&f=1&nofb=1"
-            alt="cSharp language logo"
-          />
-          <a
-            href="https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/"
-            class="homeMade"
-            role="button"
-            >Learn More</a
-          >
-        </div>
-      </div>
-    </div>
-
-    <div class="container" id="reTake">
-      <form id="again">
-        <button type="submit" class="homeMade" id="btnAgain">Re-take Quiz</button>
+            <button type="submit" class="homeMade">Submit</button>
+            <div class="expAlert">
+              <p>
+                Please enter your coding experience level at the top of the page.
+              </p>
+            </div>
       </form>
     </div>
-  </body>
+
+    <!-- ---------------- -->
+
+    <div class="results">
+      <div class="oops">
+        <p>
+          It looks like something isn't right, we haven't collected enough
+          information from you. Please click below to try again.
+        </p>
+      </div>
+      <div id="resGo">
+        <h4>
+          <span class="userName"></span>, based on your answers you should
+          study:
+        </h4>
+        <h1>Go</h1>
+        <img class="langLogo" src="https://golang.org/lib/godoc/images/go-logo-blue.svg" alt="go language logo" />
+        <a href="https://golang.org/" class="homeMade" role="button">Learn More</a>
+      </div>
+
+      <div id="resJs">
+        <h4>
+          <span class="userName"></span>, based on your answers you should
+          study:
+        </h4>
+        <h1>Javascript</h1>
+        <img class="langLogo"
+          src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.britefish.net%2Fwp-content%2Fuploads%2F2019%2F06%2Flogo-javascript-2.png&f=1&nofb=1"
+          alt="javascript language logo" />
+        <a href="https://www.javascript.com/" class="homeMade" role="button">Learn More</a>
+      </div>
+
+      <div id="resCs">
+        <h4>
+          <span class="userName"></span>, based on your answers you should
+          study:
+        </h4>
+        <h1>C#</h1>
+        <img class="langLogo"
+          src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fi.pinimg.com%2Foriginals%2Fe8%2F46%2F0f%2Fe8460f0d8b9df01e9460bfd1ade0e8c8.png&f=1&nofb=1"
+          alt="cSharp language logo" />
+        <a href="https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/" class="homeMade" role="button">Learn
+          More</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="container" id="reTake">
+    <form id="again">
+      <button type="submit" class="homeMade" id="btnAgain">
+        Re-take Quiz
+      </button>
+    </form>
+  </div>
+</body>
+
 </html>
