@@ -37,13 +37,16 @@
                 />
               </div>
             </div>
+
+ <!-- ---------------- -->
+
             <div class="col-lg-5">
               <div class="form-group">
                 <select id="inputExp" class="form-control" required>
-                  <option selected value="z">Choose Programming Experience</option>
-                  <option value="a">Beginner</option>
-                  <option value="b">Intermediate</option>
-                  <option value="c">Advanced</option>
+                  <option selected value="noExp">Choose Programming Experience</option>
+                  <option value="go">Beginner</option>
+                  <option value="js">Intermediate</option>
+                  <option value="cs">Advanced</option>
                 </select>
               </div>
             </div>
@@ -57,20 +60,20 @@
                     ><h6>Which platforms are you most familiar with?</h6></label
                   >
                   <label>
-                    <input type="radio" name="q1" value="a" checked />
+                    <input type="radio" name="q1" value="go" checked />
                     Linux, macOS, FreeBSD, NetBSD, OpenBSD, Windows, Plan 9,
                     DragonFly BSD, Solaris
                   </label>
                 </div>
                 <div class="radio">
                   <label>
-                    <input type="radio" name="q1" value="b" />
+                    <input type="radio" name="q1" value="js" />
                     Cross-platform
                   </label>
                 </div>
                 <div class="radio">
                   <label>
-                    <input type="radio" name="q1" value="c" />
+                    <input type="radio" name="q1" value="cs" />
                     Common Language Infrastructure
                   </label>
                 </div>
@@ -84,19 +87,19 @@
                     ><h6>Your preference for the language developer:</h6></label
                   >
                   <label>
-                    <input type="radio" name="q2" value="c" checked />
+                    <input type="radio" name="q2" value="cs" checked />
                     Microsoft
                   </label>
                 </div>
                 <div class="radio">
                   <label>
-                    <input type="radio" name="q2" value="a" />
+                    <input type="radio" name="q2" value="go" />
                     Google, Inc.
                   </label>
                 </div>
                 <div class="radio">
                   <label>
-                    <input type="radio" name="q2" value="b" />
+                    <input type="radio" name="q2" value="js" />
                     Netscape Communications Corp, Mozilla Foundation, Ecma
                     International
                   </label>
@@ -110,19 +113,19 @@
               <div class="question">
                 <label class="qText" for="q3"><h6>Pick a year:</h6></label>
                 <label>
-                  <input type="radio" name="q3" value="a" checked />
+                  <input type="radio" name="q3" value="go" checked />
                   2009
                 </label>
               </div>
               <div class="radio">
                 <label>
-                  <input type="radio" name="q3" value="b" />
+                  <input type="radio" name="q3" value="js" />
                   1995
                 </label>
               </div>
               <div class="radio">
                 <label>
-                  <input type="radio" name="q3" value="c" />
+                  <input type="radio" name="q3" value="cs" />
                   2000
                 </label>
               </div>
@@ -135,19 +138,19 @@
                     ><h6>Which file extension seems the most fun?</h6></label
                   >
                   <label>
-                    <input type="radio" name="q4" value="b" checked />
+                    <input type="radio" name="q4" value="js" checked />
                     .js
                   </label>
                 </div>
                 <div class="radio">
                   <label>
-                    <input type="radio" name="q4" value="c" />
+                    <input type="radio" name="q4" value="cs" />
                     .cs
                   </label>
                 </div>
                 <div class="radio">
                   <label>
-                    <input type="radio" name="q4" value="a" />
+                    <input type="radio" name="q4" value="go" />
                     .go
                   </label>
                 </div>
@@ -163,21 +166,21 @@
                     ><h6>Pick a paradigm set:</h6></label
                   >
                   <label>
-                    <input type="radio" name="q5" value="c" checked />
+                    <input type="radio" name="q5" value="cs" checked />
                     Multi-paradigm: procedural, functional, object-oriented,
                     generic
                   </label>
                 </div>
                 <div class="radio">
                   <label>
-                    <input type="radio" name="q5" value="b" />
+                    <input type="radio" name="q5" value="js" />
                     Multi-paradigm: object-oriented (prototype-based),
                     imperative, functional, event-driven
                   </label>
                 </div>
                 <div class="radio">
                   <label>
-                    <input type="radio" name="q5" value="a" />
+                    <input type="radio" name="q5" value="go" />
                     Compiled, concurrent, imperative, structured
                   </label>
                 </div>
@@ -193,19 +196,19 @@
                     </h6></label
                   >
                   <label>
-                    <input type="radio" name="q6" value="b" checked />
+                    <input type="radio" name="q6" value="js" checked />
                     Brendan Eich
                   </label>
                 </div>
                 <div class="radio">
                   <label>
-                    <input type="radio" name="q6" value="a" />
+                    <input type="radio" name="q6" value="go" />
                     Robert Griesemer, Rob Pike, Ken Thompson
                   </label>
                 </div>
                 <div class="radio">
                   <label>
-                    <input type="radio" name="q6" value="c" />
+                    <input type="radio" name="q6" value="cs" />
                     Microsoft
                   </label>
                 </div>
@@ -220,16 +223,23 @@
         </form>
       </div>
 
+
+       <!-- ---------------- -->
+
       <div class="results">
-        <h4>
-          <span class="userName"></span>, based on your answers you should
-          study:
-        </h4>
+
+        <div class="oops">
+          <p>It looks like something isn't right, we haven't collected enough information from you. Please click below to try again.</p>
+        </div>
         <div id="resGo">
+          <h4>
+            <span class="userName"></span>, based on your answers you should
+            study:
+          </h4>
           <h1>Go</h1>
           <img
             class="langLogo"
-            src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fi1.wp.com%2Fwww.pngkit.com%2Fpng%2Fdetail%2F380-3801403_go-programming-language-logo-golang-logo-png.png&f=1&nofb=1"
+            src="https://golang.org/lib/godoc/images/go-logo-blue.svg"
             alt="go language logo"
           />
           <a href="https://golang.org/" class="homeMade" role="button"
@@ -238,6 +248,10 @@
         </div>
 
         <div id="resJs">
+          <h4>
+            <span class="userName"></span>, based on your answers you should
+            study:
+          </h4>
           <h1>Javascript</h1>
           <img
             class="langLogo"
@@ -250,6 +264,10 @@
         </div>
 
         <div id="resCs">
+          <h4>
+            <span class="userName"></span>, based on your answers you should
+            study:
+          </h4>
           <h1>C#</h1>
           <img
             class="langLogo"

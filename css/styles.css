@@ -108,7 +108,8 @@ form {
 }
 
 .langLogo {
-  max-width: 250px;
+  width: 25vw;
+
   display: block;
   margin: auto;
   margin-bottom: 45px;
@@ -129,6 +130,11 @@ form {
 }
 
 #resGo, #resJS, #resCs {
+  display: none;
+}
+
+.oops {
+  font-family: 'Karla', sans-serif;
   display: none;
 }
 

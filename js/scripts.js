@@ -1,19 +1,21 @@
 //Business Logic:
 
-let a = 0;
-let b = 0;
-let c = 0;
-let z = 0;
+let go = 0;
+let js = 0;
+let cs = 0;
+let noExp = 0;
 
 function resultCount(res) {
-  if (res === "a") {
-    return a += 1;
-  } else if (res === "b") {
-    return b += 1;
-  } else if (res === "c") {
-    return c += 1;
-  } else if (res === "z") {
-    return z += 1;
+  if (res === "go") {
+    return go += 1;
+  } else if (res === "js") {
+    return js += 1;
+  } else if (res === "cs") {
+    return cs += 1;
+  } else if (res === "noExp") {
+    return noExp += 1;
+  } else {
+    return "unknown variable"
   }
 };
 
@@ -49,36 +51,46 @@ $(document).ready(function () {
       resultCount(qFour);
       resultCount(qFive);
       resultCount(qSix);
-      console.log("a = " + a + ", b = " + b + ", c = " + c, "z = " + z);
+      console.log("go = " + go + ", js = " + js + ", cs = " + cs, "noExp = " + noExp);
 
-      if (z === 1) {
+      if (noExp === 1) {
         $(".expAlert").show();
-        a = 0;
-        b = 0;
-        c = 0;
-        z = 0;
+        go = 0;
+        js = 0;
+        cs = 0;
+        noExp = 0;
       } else {
         $(".results").show();
         $("#reTake").show();
         $(".quiz").hide();
         $(".intro").hide();
-        if ((a > b) && (a > c)) {
-          $(".resGo").show();
-        } else if ((b > c) && (b > a)) {
-          $(".resJs").show();
-        } else if ((c > a) && (c > b)) {
-          $(".resCs").show();
+        if ((go > js) && (go > cs)) {
+          $("#resCs").hide();
+          $("#resJs").hide();
+          $("#resGo").show();
+        } else if ((js > cs) && (js > go)) {
+          $("#resCs").hide();
+          $("#resGo").hide();
+          $("#resJs").show();
+        } else if ((cs > go) && (cs > js)) {
+          $("#resJs").hide();
+          $("#resGo").hide();
+          $("#resCs").show();
+        } else {
+          $(".oops").show();
         };
       };
   });
+
+  $("#again").submit(function(event) {
+    event.preventDefault();
+    location.reload(true);
+    console.log("page reloaded");
+  })
 });
 
 
 
-
-// if (z === 1) {
-//   alert("Please enter a coding experience level.");
-// } else {
 
 
 
@@ -90,8 +102,8 @@ X UI logic: function that runs the two business logic functions and produces the
 X UI logic: Return name of user in the results div
 
 Special Cases:
--Make sure they have to answer every question
--Make sure the variable reset every time the form is submitted, and that the results div is hidden again
+X-Make sure they have to answer every question
+X-Make sure the variable reset every time the form is submitted, and that the results div is hidden again
 
 
 
@@ -107,35 +119,35 @@ A Go
 B Javascript
 C C#
 
-Q1: Platforms:
-A Linux, macOS, FreeBSD, NetBSD, OpenBSD, Windows, Plan 9, DragonFly BSD, Solaris
-B Cross-platform
-C Common Language Infrastructure
+    Q1: Platforms:
+    A Linux, macOS, FreeBSD, NetBSD, OpenBSD, Windows, Plan 9, DragonFly BSD, Solaris
+    B Cross-platform
+    C Common Language Infrastructure
 
-Q2: Developed by:
-A Google, Inc
-B Netscape Communications Corp, Mozilla Foundation, Ecma International
-C Microsoft
+    Q2: Developed by:
+    A Google, Inc
+    B Netscape Communications Corp, Mozilla Foundation, Ecma International
+    C Microsoft
 
-Q3: Filename Extensions:
-A .go
-B .js
-C .cs
+    Q3: Filename Extensions:
+    A .go
+    B .js
+    C .cs
 
-Q4: First Appeared:
-A 2009
-B 1995
-C 2000
+    Q4: First Appeared:
+    A 2009
+    B 1995
+    C 2000
 
-Q5: Paradigm:
-A Compiled, concurrent, imperative, structured
-B Multi-paradigm: object-oriented (prototype-based), imperative, functional, event-driven
-C Multi-paradigm: procedural, functional, object-oriented, generic
+    Q5: Paradigm:
+    A Compiled, concurrent, imperative, structured
+    B Multi-paradigm: object-oriented (prototype-based), imperative, functional, event-driven
+    C Multi-paradigm: procedural, functional, object-oriented, generic
 
-Q6: Inventor:
-A Robert Griesemer, Rob Pike, Ken Thompson
-B Brendan Eich
-C Microsoft
+    Q6: Inventor:
+    A Robert Griesemer, Rob Pike, Ken Thompson
+    B Brendan Eich
+    C Microsoft
 
 
 
