@@ -9,6 +9,8 @@
 * _CSS3_
 * _HTML5_
 * _JAVAscript_
+* _jQuery 3.6.0_
+
 
 ## Description
 
