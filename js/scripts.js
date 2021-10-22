@@ -3,6 +3,7 @@
 let a = 0;
 let b = 0;
 let c = 0;
+let z = 0;
 
 function resultCount(res) {
   if (res === "a") {
@@ -11,6 +12,8 @@ function resultCount(res) {
     return b += 1;
   } else if (res === "c") {
     return c += 1;
+  } else if (res === "z") {
+    return z += 1;
   }
 };
 
@@ -19,48 +22,65 @@ function resultCount(res) {
 $(document).ready(function () {
   $("#quizForm").submit(function (event) {
     event.preventDefault();
-    $(".results").show();
-    $("#reTake").show();
-    $(".quiz").hide();
-    $(".intro").hide();
 
-    const userName = $("input#name").val();
-    $(".userName").text(userName);
+      const userName = $("input#name").val();
+      $(".userName").text(userName);
 
-    const expLevel = $("#inputExp").val();
-    console.log("expLevel = " + expLevel);
-    const qOne = $("input:radio[name=q1]:checked").val();
-    console.log("qOne = " + qOne);
-    const qTwo = $("input:radio[name=q2]:checked").val();
-    console.log("qTwo = " + qTwo);
-    const qThr = $("input:radio[name=q3]:checked").val();
-    console.log("qThr = " + qThr);
-    const qFour = $("input:radio[name=q4]:checked").val();
-    console.log("qFour = " + qFour);
-    const qFive = $("input:radio[name=q5]:checked").val();
-    console.log("qFive = " + qFive);
-    const qSix = $("input:radio[name=q6]:checked").val();
-    console.log("qSix = " + qSix);
-    const answersArray = [qOne, qTwo, qThr, qFour, qFive, qSix];
-    console.log("answersArray = " + answersArray);
-    resultCount(expLevel);
-    resultCount(qOne);
-    resultCount(qTwo);
-    resultCount(qThr);
-    resultCount(qFour);
-    resultCount(qFive);
-    resultCount(qSix);
-    console.log("a = " + a + ", b = " + b + ", c = " + c);
+      const expLevel = $("#inputExp").val();
+      console.log("expLevel = " + expLevel);
+      const qOne = $("input:radio[name=q1]:checked").val();
+      console.log("qOne = " + qOne);
+      const qTwo = $("input:radio[name=q2]:checked").val();
+      console.log("qTwo = " + qTwo);
+      const qThr = $("input:radio[name=q3]:checked").val();
+      console.log("qThr = " + qThr);
+      const qFour = $("input:radio[name=q4]:checked").val();
+      console.log("qFour = " + qFour);
+      const qFive = $("input:radio[name=q5]:checked").val();
+      console.log("qFive = " + qFive);
+      const qSix = $("input:radio[name=q6]:checked").val();
+      console.log("qSix = " + qSix);
+      const answersArray = [qOne, qTwo, qThr, qFour, qFive, qSix];
+      console.log("answersArray = " + answersArray);
+      resultCount(expLevel);
+      resultCount(qOne);
+      resultCount(qTwo);
+      resultCount(qThr);
+      resultCount(qFour);
+      resultCount(qFive);
+      resultCount(qSix);
+      console.log("a = " + a + ", b = " + b + ", c = " + c, "z = " + z);
 
-    if ((a > b) && (a > c)) {
-      $(".resGo").show();
-    } else if ((b > c) && (b > a)) {
-      $(".resJs").show();
-    } else if ((c > a) && (c > b)) {
-      $(".resCs").show();
-    };
+      if (z === 1) {
+        $(".expAlert").show();
+        a = 0;
+        b = 0;
+        c = 0;
+        z = 0;
+      } else {
+        $(".results").show();
+        $("#reTake").show();
+        $(".quiz").hide();
+        $(".intro").hide();
+        if ((a > b) && (a > c)) {
+          $(".resGo").show();
+        } else if ((b > c) && (b > a)) {
+          $(".resJs").show();
+        } else if ((c > a) && (c > b)) {
+          $(".resCs").show();
+        };
+      };
   });
 });
+
+
+
+
+// if (z === 1) {
+//   alert("Please enter a coding experience level.");
+// } else {
+
+
 
 /*
 X UI Logic: When form is submitted, each question returns a single letter value: a, b, or c. 
