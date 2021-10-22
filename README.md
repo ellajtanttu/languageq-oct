@@ -14,7 +14,7 @@
 
 ## Description
 
-_TO BE COMPLETED ONCE WEB APP IS COMPLETE_
+_Website with a form that user fills out to find out which programming language they should learn. The main form collects the user name, experience level, and preferences for six other features of three languages: C#, Javascript, and Go. If the user has correctly input information into all of the fields, the page will display a corresponding language with a link for more information. User is then given the option to click on a button that will refresh the page so they can start again._
 
 ## Setup/Installation Requirements
 
