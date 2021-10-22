@@ -5,3 +5,11 @@
 .langLogo {
   max-width: 250px;
 }
+
+.results {
+  display: none;
+}
+
+#resGo, #resJS, #resCs {
+  display: none;
+}

@@ -24,63 +24,67 @@
               <input type="text" class="form-control" placeholder="Name" />
             </div>
             <div class="form-group col-md-5">
-              <select id="inputState" class="form-control">
+              <select id="inputExp" class="form-control">
                 <option selected>Choose Programming Experience</option>
-                <option>Beginner</option>
-                <option>Intermediate</option>
-                <option>Advanced</option>
+                <option value="a">Beginner</option>
+                <option value="b">Intermediate</option>
+                <option value="c">Advanced</option>
               </select>
             </div>
           </div>
 
           <div class="row">
             <div class="col-sm-6">
-              <div class="question">
-                <label class="qText" for="q1"
-                  ><h6>Which platforms are you most familiar with?</h6></label
-                >
-                <label>
-                  <input type="radio" name="q1" value="a" checked />
-                  Linux, macOS, FreeBSD, NetBSD, OpenBSD, Windows, Plan 9,
-                  DragonFly BSD, Solaris
-                </label>
-              </div>
-              <div class="radio">
-                <label>
-                  <input type="radio" name="q1" value="b" />
-                  Cross-platform
-                </label>
-              </div>
-              <div class="radio">
-                <label>
-                  <input type="radio" name="q1" value="c" />
-                  Common Language Infrastructure
-                </label>
+              <div class="form-group">
+                <div class="question">
+                  <label class="qText" for="q1"
+                    ><h6>Which platforms are you most familiar with?</h6></label
+                  >
+                  <label>
+                    <input type="radio" name="q1" value="a" checked />
+                    Linux, macOS, FreeBSD, NetBSD, OpenBSD, Windows, Plan 9,
+                    DragonFly BSD, Solaris
+                  </label>
+                </div>
+                <div class="radio">
+                  <label>
+                    <input type="radio" name="q1" value="b" />
+                    Cross-platform
+                  </label>
+                </div>
+                <div class="radio">
+                  <label>
+                    <input type="radio" name="q1" value="c" />
+                    Common Language Infrastructure
+                  </label>
+                </div>
               </div>
             </div>
 
             <div class="col-sm-6">
-              <div class="question">
-                <label class="qText" for="q2"
-                  ><h6>Your preference for the language developer:</h6></label
-                >
-                <label>
-                  <input type="radio" name="q2" value="c" checked />
-                  Microsoft
-                </label>
-              </div>
-              <div class="radio">
-                <label>
-                  <input type="radio" name="q2" value="a" />
-                  Google, Inc.
-                </label>
-              </div>
-              <div class="radio">
-                <label>
-                  <input type="radio" name="q2" value="b" />
-                  Netscape Communications Corp, Mozilla Foundation, Ecma
-                  International
-                </label>
+              <div class="form-group">
+                <div class="question">
+                  <label class="qText" for="q2"
+                    ><h6>Your preference for the language developer:</h6></label
+                  >
+                  <label>
+                    <input type="radio" name="q2" value="c" checked />
+                    Microsoft
+                  </label>
+                </div>
+                <div class="radio">
+                  <label>
+                    <input type="radio" name="q2" value="a" />
+                    Google, Inc.
+                  </label>
+                </div>
+                <div class="radio">
+                  <label>
+                    <input type="radio" name="q2" value="b" />
+                    Netscape Communications Corp, Mozilla Foundation, Ecma
+                    International
+                  </label>
+                </div>
               </div>
             </div>
           </div>
@@ -88,101 +92,107 @@
           <div class="row">
             <div class="col-sm-6">
               <div class="question">
-                <label class="qText" for="q1"><h6>Pick a year:</h6></label>
+                <label class="qText" for="q3"><h6>Pick a year:</h6></label>
                 <label>
-                  <input type="radio" name="q1" value="a" checked />
+                  <input type="radio" name="q3" value="a" checked />
                   2009
                 </label>
               </div>
               <div class="radio">
                 <label>
-                  <input type="radio" name="q1" value="b" />
+                  <input type="radio" name="q3" value="b" />
                   1995
                 </label>
               </div>
               <div class="radio">
                 <label>
-                  <input type="radio" name="q1" value="c" />
+                  <input type="radio" name="q3" value="c" />
                   2000
                 </label>
               </div>
             </div>
 
             <div class="col-sm-6">
-              <div class="question">
-                <label class="qText" for="q2"
-                  ><h6>Which file extension seems the most fun?</h6></label
-                >
-                <label>
-                  <input type="radio" name="q2" value="b" checked />
-                  .js
-                </label>
-              </div>
-              <div class="radio">
-                <label>
-                  <input type="radio" name="q2" value="c" />
-                  .cs
-                </label>
-              </div>
-              <div class="radio">
-                <label>
-                  <input type="radio" name="q2" value="a" />
-                  .go
-                </label>
+              <div class="form-group">
+                <div class="question">
+                  <label class="qText" for="q4"
+                    ><h6>Which file extension seems the most fun?</h6></label
+                  >
+                  <label>
+                    <input type="radio" name="q4" value="b" checked />
+                    .js
+                  </label>
+                </div>
+                <div class="radio">
+                  <label>
+                    <input type="radio" name="q4" value="c" />
+                    .cs
+                  </label>
+                </div>
+                <div class="radio">
+                  <label>
+                    <input type="radio" name="q4" value="a" />
+                    .go
+                  </label>
+                </div>
               </div>
             </div>
           </div>
 
           <div class="row">
             <div class="col-sm-6">
-              <div class="question">
-                <label class="qText" for="q1"
-                  ><h6>Pick a paradigm set:</h6></label
-                >
-                <label>
-                  <input type="radio" name="q1" value="c" checked />
-                  Multi-paradigm: procedural, functional, object-oriented,
-                  generic
-                </label>
-              </div>
-              <div class="radio">
-                <label>
-                  <input type="radio" name="q1" value="b" />
-                  Multi-paradigm: object-oriented (prototype-based), imperative,
-                  functional, event-driven
-                </label>
-              </div>
-              <div class="radio">
-                <label>
-                  <input type="radio" name="q1" value="a" />
-                  Compiled, concurrent, imperative, structured
-                </label>
+              <div class="form-group">
+                <div class="question">
+                  <label class="qText" for="q5"
+                    ><h6>Pick a paradigm set:</h6></label
+                  >
+                  <label>
+                    <input type="radio" name="q5" value="c" checked />
+                    Multi-paradigm: procedural, functional, object-oriented,
+                    generic
+                  </label>
+                </div>
+                <div class="radio">
+                  <label>
+                    <input type="radio" name="q5" value="b" />
+                    Multi-paradigm: object-oriented (prototype-based),
+                    imperative, functional, event-driven
+                  </label>
+                </div>
+                <div class="radio">
+                  <label>
+                    <input type="radio" name="q5" value="a" />
+                    Compiled, concurrent, imperative, structured
+                  </label>
+                </div>
               </div>
             </div>
 
             <div class="col-sm-6">
-              <div class="question">
-                <label class="qText" for="q2"
-                  ><h6>
-                    Who would you like to have invented your language?
-                  </h6></label
-                >
-                <label>
-                  <input type="radio" name="q2" value="b" checked />
-                  Brendan Eich
-                </label>
-              </div>
-              <div class="radio">
-                <label>
-                  <input type="radio" name="q2" value="a" />
-                  Robert Griesemer, Rob Pike, Ken Thompson
-                </label>
-              </div>
-              <div class="radio">
-                <label>
-                  <input type="radio" name="q2" value="c" />
-                  Microsoft
-                </label>
+              <div class="form-group">
+                <div class="question">
+                  <label class="qText" for="q6"
+                    ><h6>
+                      Who would you like to have invented your language?
+                    </h6></label
+                  >
+                  <label>
+                    <input type="radio" name="q6" value="b" checked />
+                    Brendan Eich
+                  </label>
+                </div>
+                <div class="radio">
+                  <label>
+                    <input type="radio" name="q6" value="a" />
+                    Robert Griesemer, Rob Pike, Ken Thompson
+                  </label>
+                </div>
+                <div class="radio">
+                  <label>
+                    <input type="radio" name="q6" value="c" />
+                    Microsoft
+                  </label>
+                </div>
               </div>
             </div>
           </div>
@@ -196,9 +206,10 @@
           <span class="userName"></span>, based on your answers, you should
           study:
         </h4>
-        <div class="resGo">
+        <div id="resGo">
           <h2>Go</h2>
-          <img class="langLogo"
+          <img
+            class="langLogo"
             src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fi1.wp.com%2Fwww.pngkit.com%2Fpng%2Fdetail%2F380-3801403_go-programming-language-logo-golang-logo-png.png&f=1&nofb=1"
             alt="go language logo"
           />
@@ -207,9 +218,10 @@
           </button>
         </div>
 
-        <div class="resJs">
+        <div id="resJs">
           <h2>Javascript</h2>
-          <img class="langLogo"
+          <img
+            class="langLogo"
             src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.britefish.net%2Fwp-content%2Fuploads%2F2019%2F06%2Flogo-javascript-2.png&f=1&nofb=1"
             alt="javascript language logo"
           />
@@ -218,17 +230,20 @@
           </button>
         </div>
 
-        <div class="resCs">
+        <div id="resCs">
           <h2>C#</h2>
-          <img class="langLogo"
+          <img
+            class="langLogo"
             src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fi.pinimg.com%2Foriginals%2Fe8%2F46%2F0f%2Fe8460f0d8b9df01e9460bfd1ade0e8c8.png&f=1&nofb=1"
             alt="javascript language logo"
           />
           <button type="button" class="btn btn-link">
-            <a href="https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/">learn more</a>
+            <a
+              href="https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/"
+              >learn more</a
+            >
           </button>
         </div>
-
       </div>
     </div>
   </body>
