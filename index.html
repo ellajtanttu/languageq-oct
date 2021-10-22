@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+  <link href="css/styles.css" rel="stylesheet" type="text/css">
+  <script src="js/jquery-3.6.0.js"></script>
+  <script src="js/scripts.js"></script>
+  <title>Programming Language Quiz</title>
+</head>
+<body>
+  <div class="container">
+
+<div class="intro">
+<h1>Programming Language Quiz</h1>
+<h5>Find out which programming language will suit your interests by answering the questions below!</h5>
+</div>
+
+<div class="quiz">
+<form id="quizForm">
+  <div class="row">
+    <div class="col">
+      <input type="text" class="form-control" placeholder="Name">
+    </div>
+    <div class="form-group col-md-5">
+      <select id="inputState" class="form-control">
+        <option selected>Choose Programming Experience</option>
+        <option>Beginner</option>
+        <option>Intermediate</option>
+        <option>Advanced</option>
+      </select>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-sm-6">
+      <div class="question">
+        <label class="qText" for="q1"><h6>Which platforms are you most familiar with?</h6></label>
+        <label>
+          <input type="radio" name="q1" value="a" checked>
+          Linux, macOS, FreeBSD, NetBSD, OpenBSD, Windows, Plan 9, DragonFly BSD, Solaris
+        </label>
+      </div>
+      <div class="radio">
+        <label>
+          <input type="radio" name="q1" value="b">
+          Cross-platform
+        </label>
+      </div>
+      <div class="radio">
+        <label>
+          <input type="radio" name="q1" value="c">
+          Common Language Infrastructure
+        </label>
+      </div>
+    </div>
+
+    <div class="col-sm-6">
+      <div class="question">
+        <label class="qText" for="q2"><h6>Your preference for the language developer:</h6></label>
+        <label>
+          <input type="radio" name="q2" value="c" checked>
+          Microsoft
+        </label>
+      </div>
+      <div class="radio">
+        <label>
+          <input type="radio" name="q2" value="a">
+          Google, Inc.
+        </label>
+      </div>
+      <div class="radio">
+        <label>
+          <input type="radio" name="q2" value="b">
+          Netscape Communications Corp, Mozilla Foundation, Ecma International
+        </label>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-sm-6">
+      <div class="question">
+        <label class="qText" for="q1"><h6>Pick a year:</h6></label>
+        <label>
+          <input type="radio" name="q1" value="a" checked>
+          2009
+        </label>
+      </div>
+      <div class="radio">
+        <label>
+          <input type="radio" name="q1" value="b">
+          1995
+        </label>
+      </div>
+      <div class="radio">
+        <label>
+          <input type="radio" name="q1" value="c">
+          2000
+        </label>
+      </div>
+    </div>
+
+    <div class="col-sm-6">
+      <div class="question">
+        <label class="qText" for="q2"><h6>Which file extension seems the most fun?</h6></label>
+        <label>
+          <input type="radio" name="q2" value="b" checked>
+          .js
+        </label>
+      </div>
+      <div class="radio">
+        <label>
+          <input type="radio" name="q2" value="c">
+          .cs
+        </label>
+      </div>
+      <div class="radio">
+        <label>
+          <input type="radio" name="q2" value="a">
+          .go
+        </label>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-sm-6">
+      <div class="question">
+        <label class="qText" for="q1"><h6>Pick a paradigm set:</h6></label>
+        <label>
+          <input type="radio" name="q1" value="c" checked>
+          Multi-paradigm: procedural, functional, object-oriented, generic
+        </label>
+      </div>
+      <div class="radio">
+        <label>
+          <input type="radio" name="q1" value="b">
+          Multi-paradigm: object-oriented (prototype-based), imperative, functional, event-driven
+        </label>
+      </div>
+      <div class="radio">
+        <label>
+          <input type="radio" name="q1" value="a">
+          Compiled, concurrent, imperative, structured
+        </label>
+      </div>
+    </div>
+
+    <div class="col-sm-6">
+      <div class="question">
+        <label class="qText" for="q2"><h6>Who would you like to have invented your language?</h6></label>
+        <label>
+          <input type="radio" name="q2" value="b" checked>
+          Brendan Eich
+        </label>
+      </div>
+      <div class="radio">
+        <label>
+          <input type="radio" name="q2" value="a">
+          Robert Griesemer, Rob Pike, Ken Thompson
+        </label>
+      </div>
+      <div class="radio">
+        <label>
+          <input type="radio" name="q2" value="c">
+          Microsoft
+        </label>
+      </div>
+    </div>
+  </div>
+
+  <input class="btn btn-primary" type="submit" value="Submit">
+</form>
+</div>
+
+<div class="results">
+  <h4><span class="userName"></span>, based on your answers, you should study:</h4>
+<div class="resGo">
+  <h2>Go</h2>
+</div>
+</div>
+
+  </div>
+</body>
+</html>

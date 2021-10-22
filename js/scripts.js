@@ -1,7 +1,7 @@
 /*
 BRAINSTORM - PROBLEM SOLVING PREWORK
 
-Three languages: 
+Three languages:
 A Go
 B Javascript
 C C#
@@ -31,8 +31,13 @@ A Compiled, concurrent, imperative, structured
 B Multi-paradigm: object-oriented (prototype-based), imperative, functional, event-driven
 C Multi-paradigm: procedural, functional, object-oriented, generic
 
+Q6: Inventor:
+A Robert Griesemer, Rob Pike, Ken Thompson
+B Brendan Eich
+C Microsoft
 
 
 
 
+*/
 
