@@ -20,6 +20,13 @@ $(document).ready(function () {
   $("#quizForm").submit(function (event) {
     event.preventDefault();
     $(".results").show();
+    $("#reTake").show();
+    $(".quiz").hide();
+    $(".intro").hide();
+
+    const userName = $("input#name").val();
+    $(".userName").text(userName);
+
     const expLevel = $("#inputExp").val();
     console.log("expLevel = " + expLevel);
     const qOne = $("input:radio[name=q1]:checked").val();
@@ -56,11 +63,17 @@ $(document).ready(function () {
 });
 
 /*
-UI Logic: When form is submitted, each question returns a single letter value: a, b, or c. 
-Business logic: function that will count the occurrences # of each letter.
-Business logic: function that will compare amounts of each and produce one value based on the highest number: this will be a branching statement.
-UI logic: function that runs the two business logic functions and produces the language name based on the value, shows the corresponding results div. 
-UI logic: Return name of user in the results div
+X UI Logic: When form is submitted, each question returns a single letter value: a, b, or c. 
+X Business logic: function that will count the occurrences # of each letter.
+X Business logic: function that will compare amounts of each and produce one value based on the highest number: this will be a branching statement.
+X UI logic: function that runs the two business logic functions and produces the language name based on the value, shows the corresponding results div. 
+X UI logic: Return name of user in the results div
+
+Special Cases:
+-Make sure they have to answer every question
+-Make sure the variable reset every time the form is submitted, and that the results div is hidden again
+
+
 
 
 

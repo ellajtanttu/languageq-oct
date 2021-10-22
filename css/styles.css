@@ -1,12 +1,130 @@
+/* 
+font-family: 'Karla', sans-serif;
+font-family: 'Roboto Slab', serif; 
+*/
+
+body {
+  background-image: url("https://images.unsplash.com/photo-1557683311-eac922347aa1?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1729&q=80");
+  background-repeat: no-repeat;
+  background-size: 100vw 100vh;
+  background-attachment: fixed;
+}
+
+.container {
+  max-width: 80vw;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  padding-top: 45px;
+  padding-bottom: 45px;
+  padding-left: 5vw;
+  padding-right: 5vw;
+  background-color: rgba(205, 225, 241, 0.123);
+  border-radius: 35px;
+}
+
+.intro {
+  padding-bottom: 35px;
+}
+
+h1 {
+  padding-bottom: .45em;
+  font-family: 'Roboto Slab', serif; 
+  font-size: 10vw;
+}
+
+h5 {
+  font-size: 1.5em;
+  line-height: 1.4em;
+  font-family: 'Karla', sans-serif;
+  font-weight: 600;
+  color: rgb(255, 255, 255);
+  font-style: italic;
+}
+
+h6 {
+  font-family: 'Karla', sans-serif;
+  font-size: 1.1em;
+  font-weight: 800;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+}
+
+h2, h3, h4 {
+  font-family: 'Karla', sans-serif;
+  font-weight: 600;
+  letter-spacing: .05em;
+}
+
+a {
+  text-decoration: none;
+}
+
+form {
+  font-family: 'Karla', sans-serif;
+}
+
+.form-group {
+  padding-bottom: 35px;
+}
+
+#top-row {
+  padding-bottom: 4vw;
+}
+
+.homeMade {
+  font-size: 1em;
+  font-weight: 600;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+  background-color: rgb(255, 255, 255);
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 25px;
+  padding-right: 25px;
+  border-radius: 20px;
+  border-style: none;
+  color: black;
+}
+
+.homeMade:hover {
+  font-weight: 800;
+  background-color: rgb(0, 0, 0);
+  color: white;
+  text-decoration: none;
+}
+
+.homeMade:active, .homeMade:focus,  {
+  font-weight: 800;
+  background-color: rgb(0, 0, 0);
+  color: white;
+  text-decoration: none;
+  border-style: solid;
+  border-width: 2px;
+  border-color: white;
+}
+
 .qText {
   display: block;
 }
 
 .langLogo {
   max-width: 250px;
+  display: block;
+  margin: auto;
+  margin-bottom: 45px;
 }
 
 .results {
+  display: none;
+  text-align: center;
+}
+
+#btnAgain {
+  margin: auto;
+}
+
+#reTake {
+  text-align: center;
   display: none;
 }
 

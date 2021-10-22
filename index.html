@@ -5,13 +5,19 @@
     <link href="css/styles.css" rel="stylesheet" type="text/css" />
     <script src="js/jquery-3.6.0.js"></script>
     <script src="js/scripts.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200;0,300;0,400;0,600;0,800;1,200;1,300;1,400;1,600;1,800&family=Roboto+Slab:wght@200;400;700&display=swap"
+      rel="stylesheet"
+    />
     <title>Programming Language Quiz</title>
   </head>
   <body>
     <div class="container">
       <div class="intro">
         <h1>Programming Language Quiz</h1>
-        <h5>
+        <h5 id="mainSubHead">
           Find out which programming language will suit your interests by
           answering the questions below!
         </h5>
@@ -19,22 +25,31 @@
 
       <div class="quiz">
         <form id="quizForm">
-          <div class="row">
-            <div class="col">
-              <input type="text" class="form-control" placeholder="Name" />
+          <div class="row" id="top-row">
+            <div class="col-lg-7">
+              <div class="form-group">
+                <input
+                  id="name"
+                  type="text"
+                  class="form-control"
+                  placeholder="Name"
+                />
+              </div>
             </div>
-            <div class="form-group col-md-5">
-              <select id="inputExp" class="form-control">
-                <option selected>Choose Programming Experience</option>
-                <option value="a">Beginner</option>
-                <option value="b">Intermediate</option>
-                <option value="c">Advanced</option>
-              </select>
+            <div class="col-lg-5">
+              <div class="form-group">
+                <select id="inputExp" class="form-control">
+                  <option selected>Choose Programming Experience</option>
+                  <option value="a">Beginner</option>
+                  <option value="b">Intermediate</option>
+                  <option value="c">Advanced</option>
+                </select>
+              </div>
             </div>
           </div>
 
           <div class="row">
-            <div class="col-sm-6">
+            <div class="col-lg-6">
               <div class="form-group">
                 <div class="question">
                   <label class="qText" for="q1"
@@ -61,7 +76,7 @@
               </div>
             </div>
 
-            <div class="col-sm-6">
+            <div class="col-lg-6">
               <div class="form-group">
                 <div class="question">
                   <label class="qText" for="q2"
@@ -90,7 +105,7 @@
           </div>
 
           <div class="row">
-            <div class="col-sm-6">
+            <div class="col-lg-6">
               <div class="question">
                 <label class="qText" for="q3"><h6>Pick a year:</h6></label>
                 <label>
@@ -112,7 +127,7 @@
               </div>
             </div>
 
-            <div class="col-sm-6">
+            <div class="col-lg-6">
               <div class="form-group">
                 <div class="question">
                   <label class="qText" for="q4"
@@ -140,7 +155,7 @@
           </div>
 
           <div class="row">
-            <div class="col-sm-6">
+            <div class="col-lg-6">
               <div class="form-group">
                 <div class="question">
                   <label class="qText" for="q5"
@@ -168,7 +183,7 @@
               </div>
             </div>
 
-            <div class="col-sm-6">
+            <div class="col-lg-6">
               <div class="form-group">
                 <div class="question">
                   <label class="qText" for="q6"
@@ -197,7 +212,7 @@
             </div>
           </div>
 
-          <input class="btn btn-primary" type="submit" value="Submit" />
+          <button type="submit" class="homeMade">Submit</button>
         </form>
       </div>
 
@@ -207,44 +222,50 @@
           study:
         </h4>
         <div id="resGo">
-          <h2>Go</h2>
+          <h1>Go</h1>
           <img
             class="langLogo"
             src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fi1.wp.com%2Fwww.pngkit.com%2Fpng%2Fdetail%2F380-3801403_go-programming-language-logo-golang-logo-png.png&f=1&nofb=1"
             alt="go language logo"
           />
-          <button type="button" class="btn btn-link">
-            <a href="https://golang.org/">learn more</a>
-          </button>
+          <a href="https://golang.org/" class="homeMade" role="button"
+            >Learn More</a
+          >
         </div>
 
         <div id="resJs">
-          <h2>Javascript</h2>
+          <h1>Javascript</h1>
           <img
             class="langLogo"
             src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.britefish.net%2Fwp-content%2Fuploads%2F2019%2F06%2Flogo-javascript-2.png&f=1&nofb=1"
             alt="javascript language logo"
           />
-          <button type="button" class="btn btn-link">
-            <a href="https://www.javascript.com/">learn more</a>
-          </button>
+          <a href="https://www.javascript.com/" class="homeMade" role="button"
+            >Learn More</a
+          >
         </div>
 
         <div id="resCs">
-          <h2>C#</h2>
+          <h1>C#</h1>
           <img
             class="langLogo"
             src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fi.pinimg.com%2Foriginals%2Fe8%2F46%2F0f%2Fe8460f0d8b9df01e9460bfd1ade0e8c8.png&f=1&nofb=1"
-            alt="javascript language logo"
+            alt="cSharp language logo"
           />
-          <button type="button" class="btn btn-link">
-            <a
-              href="https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/"
-              >learn more</a
-            >
-          </button>
+          <a
+            href="https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/"
+            class="homeMade"
+            role="button"
+            >Learn More</a
+          >
         </div>
       </div>
+    </div>
+
+    <div class="container" id="reTake">
+      <form id="again">
+        <button type="submit" class="homeMade" id="btnAgain">Re-take Quiz</button>
+      </form>
     </div>
   </body>
 </html>
