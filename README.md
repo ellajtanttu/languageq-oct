@@ -25,6 +25,9 @@ _Website with a form that user fills out to find out which programming language 
 * _open languageQ-oct/index.html in your browser_
 * _Open files in VS Code to edit_
 
+## View Live Website
+_https://ellajtanttu.github.io/languageq-oct/_
+
 ## Known Bugs
 
 _No known issues_
