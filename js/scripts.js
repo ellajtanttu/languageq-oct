@@ -41,30 +41,30 @@ $(document).ready(function () {
     resultCount(qFive);
     resultCount(qSix);
     if (noExp === 1) {
-      $(".expAlert").show();
+      $(".expAlert").fadeIn();
       go = 0;
       js = 0;
       cs = 0;
       noExp = 0;
     } else {
       $(".results").show();
-      $("#reTake").show();
-      $(".quiz").hide();
-      $(".intro").hide();
+      $("#reTake").fadeIn();
+      $(".quiz").fadeOut(300);
+      $(".intro").fadeOut(300);
       if (go > js && go > cs) {
-        $("#resCs").hide();
-        $("#resJs").hide();
-        $("#resGo").show();
+        $("#resCs").fadeOut();
+        $("#resJs").fadeOut();
+        $("#resGo").fadeIn(900);
       } else if (js > cs && js > go) {
-        $("#resCs").hide();
-        $("#resGo").hide();
-        $("#resJs").show();
+        $("#resCs").fadeOut();
+        $("#resGo").fadeOut();
+        $("#resJs").fadeIn(900);
       } else if (cs > go && cs > js) {
-        $("#resJs").hide();
-        $("#resGo").hide();
-        $("#resCs").show();
+        $("#resJs").fadeOut();
+        $("#resGo").fadeOut();
+        $("#resCs").fadeIn(900);
       } else {
-        $(".oops").show();
+        $(".oops").fadeIn();
       }
     }
   });
